@@ -1,6 +1,6 @@
 pipeline {
     agent any
-
+    tool name: 'gradle', type: gradle
     stages {
         stage('Build') {
             steps {
