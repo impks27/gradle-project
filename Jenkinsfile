@@ -3,9 +3,10 @@ pipeline {
     
     stages {
         stage('Build') {
-            tool name: 'gradle', type: gradle
+            
             steps {
                 echo 'Building..'
+                tool name: 'gradle', type: gradle
                 sh 'gradle clean build'
             }
         }
