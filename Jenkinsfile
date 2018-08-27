@@ -6,7 +6,7 @@ pipeline {
             
             steps {
                 echo 'Building..'
-                tool name: 'gradle', type: gradle
+                tool name: 'gradle-4.7', type: 'gradle'
                 sh 'gradle clean build'
             }
         }
