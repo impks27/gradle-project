@@ -1,8 +1,9 @@
 pipeline {
     agent any
-    tool name: 'gradle', type: gradle
+    
     stages {
         stage('Build') {
+            tool name: 'gradle', type: gradle
             steps {
                 echo 'Building..'
                 sh 'gradle clean build'
