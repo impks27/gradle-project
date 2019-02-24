@@ -9,6 +9,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'gradle --version'
+                sh 'gradle clean build --stacktrace'
             }
         }
         stage('Test') {
