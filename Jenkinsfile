@@ -1,13 +1,14 @@
 pipeline {
     agent any
-    
+    tools {
+        gradle "gradle"
+    }
     stages {
         stage('Build') {
-            
+
             steps {
                 echo 'Building..'
-                tool name: 'gradle-4.7', type: 'gradle'
-                sh 'gradle clean build'
+                sh 'gradle --version'
             }
         }
         stage('Test') {
