@@ -1,0 +1,28 @@
+buildscript {
+  repositories {
+    mavenCentral()
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "com.netflix.nebula:gradle-metrics-plugin:8.4.0"
+  }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'maven'
+apply plugin: 'nebula.metrics'
+
+description = 'Groovy and Gradle Examples Project'
+group 'io.sample'
+version '1.0.0.BUILD-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+//repositories {
+    //mavenCentral()
+//}
