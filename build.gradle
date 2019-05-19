@@ -5,7 +5,7 @@ apply plugin: 'maven'
 
 description = 'Groovy and Gradle Examples Project'
 group 'io.sample'
-version '1.0.0.BUILD-SNAPSHOT'
+version '1.0.1.BUILD-SNAPSHOT'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
